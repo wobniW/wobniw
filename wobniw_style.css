@@ -10,14 +10,21 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
 }
 
-header, footer {
+header {
     color: #FFFFFF;
     background-color: #000000;
     width: 100%;
     padding: 50px 0;
+}
+
+footer {
+    color: #FFFFFF;
+    background-color: #000000;
+    width: 100%;
+    font-size: 20px;
+    padding: 20px 0;
 }
 
 .body {
@@ -27,6 +34,7 @@ header, footer {
     padding: 0;
     flex-grow: 1;
 }
+
 .body h1 {
     padding: 25px 0 10px 0;
 }
@@ -35,12 +43,11 @@ header, footer {
     padding: 10px 0;
 }
 
-.bilibili {
-    padding: 5px 10px;
-    font-size: 20px;
+.link {
     background-color: #FFFFFF;
-    background-image: url("https://i0.hdslb.com/bfs/static/jinkela/long/images/favicon.ico");
-    background-repeat: no-repeat;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 5px 10px;
     border: none;
     border-radius: 7px;
     cursor: pointer;
@@ -48,5 +55,5 @@ header, footer {
 }
 
 button:hover {
-    background-color: #7FD0EA;
+    background-color: #7fbfff;
 }
