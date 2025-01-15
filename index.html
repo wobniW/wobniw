@@ -7,15 +7,11 @@
     </head>
     <body>
         <header>
-            <h1>Welcome to wobniW's GitHub Pages</h1>
+            <h1>wobniW's GitHub Pages</h1>
         </header>
-        <div class="body">
-            <h1>主页</h1>
-            <button onclick="window.open('/abc/article_A.html')">
-                Article A
-            </button>
-            <button onclick="window.open('/abc/article_B.html')">
-                Article B
+        <div id="body" class="body">
+            <button onclick="let element = document.getElementById('body');element.removeAttribute('id');this.cache.valueOf()">
+                Click Me
             </button>
         </div>
         <footer>
