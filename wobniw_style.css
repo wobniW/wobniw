@@ -1,15 +1,59 @@
+/* reset style */
+
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     border: 0;
+    color: inherit;
+    background-color: inherit;
+    direction: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    text-align: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    vertical-align: inherit;
+}
+
+:root { /* set for inherit fields */
+    color: #000000;
+    background-color: #FFFFFF;
+    direction: ltr;
+    font-size: 16px;
+    font-style: normal;
     text-align: center;
     font-family: sans-serif;
+    font-weight: normal;
+    vertical-align: baseline;
 }
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h5 {
+    font-size: 0.8em;
+}
+
+h6 {
+    font-size: 0.7em;
+}
+
+/* website style */
 
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: sans-serif;
 }
 
 header {
@@ -28,8 +72,6 @@ footer {
 }
 
 .body {
-    color: #000000;
-    background-color: #FFFFFF;
     width: 640px;
     padding: 0;
     flex-grow: 1;
@@ -43,17 +85,25 @@ footer {
     padding: 10px 0;
 }
 
-.link {
+button {
+    color: #000000 !important;
     background-color: #FFFFFF;
     font-size: 20px;
     line-height: 20px;
     padding: 5px 10px;
-    border: none;
+    border-color: #CFCFCF;
+    border-width: 3px;
+    border-style: outset;
     border-radius: 7px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #7fbfff;
+    background-color: #EFEFEF;
+}
+
+button:active {
+    border-width: 3px;
+    border-style: inset;
 }
