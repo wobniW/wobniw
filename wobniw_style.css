@@ -73,20 +73,15 @@ footer {
 
 .body {
     width: 640px;
-    padding: 0;
     flex-grow: 1;
 }
 
-.body h1 {
-    padding: 25px 0 10px 0;
-}
-
-.body p {
-    padding: 10px 0;
+.body>* {
+    margin: 20px 0;
 }
 
 button {
-    color: #000000 !important;
+    color: #000000;
     background-color: #FFFFFF;
     font-size: 20px;
     line-height: 20px;
